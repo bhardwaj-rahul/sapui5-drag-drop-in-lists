@@ -1,0 +1,50 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="dragdrop.main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		
+		<HBox justifyContent="SpaceBetween">
+			<items>
+				<List 
+					headerText='Players'
+					id='players' 
+					items='{/players}'>
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+					<items>
+						<!-- <ObjectListItem
+							title="{name}" >
+							<attributes>
+								<ObjectAttribute
+								title='Role'
+								text="{role}" />
+								<ObjectAttribute
+								title='Rating'
+								text="{rating}" />
+							</attributes>
+						</ObjectListItem> -->
+						<StandardListItem 
+							title="{name}"
+							description="{role}" />
+					</items>
+					</List>
+					
+					<List 
+					headerText='Playing XI'
+					id='playing' 
+					items='{playing>/playing}'>
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+					<items>
+						<StandardListItem
+							title="{playing>name}" />
+					</items>
+					</List>
+			</items>
+		</HBox>
+		
+		</content>
+	</Page>
+</core:View>

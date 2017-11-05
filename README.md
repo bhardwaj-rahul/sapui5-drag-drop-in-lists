@@ -10,3 +10,7 @@ One can drag and drop options to another list.
 Dragging option from List 1 to List 2, adds the List1 object to List2's model.
 
 Credit to other authors as well from where I learnt.
+
+# Demo :
+
+![alt text](https://github.com/bhardwaj-rahul/sapui5-drag-drop-in-lists/blob/master/Sample.gif "Demo")
